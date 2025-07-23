@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2025.1.1-2
+      author: Evssev
+      changes:
+        - sqlFile:
+            path: db_changelog/2025.1.1/sql/users.sql
+            stripComments: true
