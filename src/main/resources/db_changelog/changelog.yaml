@@ -3,3 +3,7 @@ databaseChangeLog:
       file: db_changelog/2025.1.1/1-create-users-table.yaml
   - include:
       file: db_changelog/2025.1.1/2-init-users.yaml
+  - include:
+      file: db_changelog/2025.2.1/1-create-product-table.yaml
+  - include:
+      file: db_changelog/2025.2.1/2-init-products.yaml

@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2025.2.1-1
+      author: Evssev
+      changes:
+        - createTable:
+            tableName: products
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: account_number
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: balance
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_type
+                  type: character varying
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_users_products
+                    references: users(id)
+
